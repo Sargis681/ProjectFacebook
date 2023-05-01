@@ -1,0 +1,75 @@
+$tablet: " (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+.n-bot {
+  .container {
+    max-width: 1140px;
+    background-image: linear-gradient(
+      0deg,
+      rgba(110, 107, 107, 0.691),
+      rgba(180, 180, 176, 0.434)
+    );
+    margin: 0 auto;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    @media #{$tablet} {
+      height: 200px;
+      
+    }
+
+    .n {
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      div {
+        background-image: linear-gradient(
+          0deg,
+          rgba(24, 24, 24, 0.833),
+          rgba(84, 84, 83, 0.434)
+
+        );
+        &:hover{
+          background-image: linear-gradient(
+          0deg,
+          rgba(24, 24, 24, 0.692),
+          rgba(84, 84, 83, 0.533)
+
+        );
+
+        }
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+
+        span {
+          color: white;
+          font-family: sans-serif;
+          &:hover{
+            cursor: pointer;
+          }
+          @media #{$tablet} {
+            display: none;
+            
+          }
+        }
+
+        .photo-camera {
+          fill: rgb(255, 255, 255);
+          font-size: 19px;
+        }
+
+        .smile {
+          fill: white;
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}

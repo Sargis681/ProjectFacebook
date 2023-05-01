@@ -1,0 +1,73 @@
+$tablet: " (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+.NavbarTwo {
+  position: sticky;
+  top: 70px;
+  z-index: 1000000000;
+  background-color: white;
+
+  .container {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    @media #{$tablet} {
+      max-width: 90%;
+      display: flex;
+      /* justify-content: space-evenly; */
+      flex-wrap: nowrap;
+      flex-direction: row;
+      
+    }
+  }
+
+  .two-left {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    @media #{$tablet} {
+
+        
+    }
+
+    span {
+      font-weight: bolder;
+      padding: 15px;
+      @media #{$tablet} {
+        padding: 4px;     
+      }
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      transition: all 0.5s;
+      color: #4b4a4ac9;
+
+      &:hover {
+        background-color: #333;
+        cursor: pointer;
+        color: white;
+        
+      }
+    }
+
+    // gap: 5px;
+  }
+
+  .two-right {
+    // background-color: r;
+
+    .bi-dot {
+      font-size: 30px;
+      @media #{$tablet} {
+        font-size: 18px;
+        
+        
+      }
+      // background-color: red;
+      // width: 20px;
+      cursor: pointer;
+      background-color: #333333ad;
+    }
+  }
+}

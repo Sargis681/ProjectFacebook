@@ -1,0 +1,56 @@
+.NavbarTwo {
+  position: sticky;
+  top: 70px;
+  z-index: 1000000000;
+  background-color: white;
+}
+.NavbarTwo .container {
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+@media (max-width: 1023px) {
+  .NavbarTwo .container {
+    max-width: 90%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+}
+.NavbarTwo .two-left {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.NavbarTwo .two-left span {
+  font-weight: bolder;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  color: rgba(75, 74, 74, 0.7882352941);
+}
+@media (max-width: 1023px) {
+  .NavbarTwo .two-left span {
+    padding: 4px;
+  }
+}
+.NavbarTwo .two-left span:hover {
+  background-color: #333;
+  cursor: pointer;
+  color: white;
+}
+.NavbarTwo .two-right .bi-dot {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: rgba(51, 51, 51, 0.6784313725);
+}
+@media (max-width: 1023px) {
+  .NavbarTwo .two-right .bi-dot {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=navbarTwo.css.map */

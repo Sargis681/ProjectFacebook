@@ -1,0 +1,133 @@
+.post {
+  box-shadow: 0px 0px 1px 1px rgba(121, 120, 120, 0.525);
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.post .input-div {
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.post .input-div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.post .input-div input {
+  width: 90%;
+  padding: 9px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(240, 242, 245);
+  background-image: url("https://image.shutterstock.com/image-vector/apple-icon-vector-fruit-symbol-260nw-1466147615.jpg");
+  background-size: 20px;
+  background-position-x: 90%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+.post .li-co {
+  display: flex;
+  justify-content: space-evenly;
+}
+.post .li-co div {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.post .li-co div:hover {
+  background-color: rgba(51, 51, 51, 0.0784313725);
+}
+.post .li-co div span {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+.post .li-co div .bbr {
+  font-size: 20px;
+}
+.post .bi {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  font-family: serif;
+  gap: 8px;
+}
+.post .bi .bil {
+  font-size: 19px;
+}
+.post .hr-s {
+  width: 97%;
+  margin: 0 auto;
+}
+.post .pos {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.post .pos .pos-1 {
+  display: flex;
+  gap: 5px;
+}
+.post .pos .pos-1 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.post .pos .pos-1 .post-1 {
+  display: flex;
+  gap: 8px;
+}
+.post .pos .pos-1 .post-1 .post-1-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.post .pos .pos-1 .post-1 .post-1-1 .sa {
+  color: black;
+  font-weight: bolder;
+}
+.post .pos .pos-1 .post-1 .post-1-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.post .post-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(176, 177, 177) 50%, rgb(150, 153, 153) 100%);
+  padding: 20px;
+}
+.post .post-2 .post-2-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+@media (max-width: 1023px) {
+  .post .post-2 .post-2-2 {
+    width: 300px;
+    height: 300px;
+  }
+}
+.post .post-2 .post-2-2 img {
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+}
+@media (max-width: 1023px) {
+  .post .post-2 .post-2-2 img {
+    width: 290px;
+    height: 290px;
+  }
+}/*# sourceMappingURL=post.css.map */
