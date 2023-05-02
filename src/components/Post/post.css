@@ -10,13 +10,11 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.post .input-div img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
+.post .input-div form {
+  width: 100%;
 }
-.post .input-div input {
-  width: 90%;
+.post .input-div form input {
+  width: 100%;
   padding: 9px;
   border: none;
   border-radius: 20px;
@@ -27,6 +25,14 @@
   background-position-y: 50%;
   background-repeat: no-repeat;
   border-radius: 15px;
+}
+.post .input-div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.post .input-div img form {
+  width: 100%;
 }
 .post .li-co {
   display: flex;

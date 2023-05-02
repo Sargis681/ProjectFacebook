@@ -6,8 +6,13 @@ import ContentFriends from '../ContentFriends/ContentFriends'
 import ShareInput from '../ShareInput/ShareInput'
 import ListGrid from '../ListGrig/ListGrid'
 import Post from '../Post/Post'
+import { useDispatch, useSelector } from 'react-redux'
+import { selectPost } from '../../store/postSlices/postSlices'
 
 function Content() {
+  const post=useSelector(selectPost)
+  const dispatch=useDispatch()
+  // console.log(post);
   return (
     <div className='content'>
       <div className="container">
@@ -22,12 +27,14 @@ function Content() {
         <div className="cont-right">
           <ShareInput />
           <ListGrid />
+              {post.map((el,i) => <Post key={i} el = {el}  />)}
+
+            
+          {/* <Post />
           <Post />
           <Post />
           <Post />
-          <Post />
-          <Post />
-          <Post />
+          <Post /> */}
 
         </div>
       </div>

@@ -10,14 +10,10 @@ $desktop: "(min-width: 1024px)";
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-            img{
-                width: 40px;
-                height: 40px;
-                border-radius: 50px;
-
-            }
-            input{
-                width: 90%;
+            form{
+              width: 100%;
+              input{
+                width: 100%;
                 padding: 9px;
                 border: none;
                 border-radius: 20px;
@@ -31,6 +27,17 @@ $desktop: "(min-width: 1024px)";
                  border-radius: 15px;
 
             }
+            }
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50px;
+                form{
+                  width: 100%;
+                }
+
+            }
+           
         }
         .li-co{
             display: flex;
